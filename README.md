@@ -1,2 +1,3 @@
 # calomel
-Calomel.org FreeBSD recommendations version controlled.
+
+[Calomel.org](https://calomel.org/) FreeBSD recommendations version controlled.
