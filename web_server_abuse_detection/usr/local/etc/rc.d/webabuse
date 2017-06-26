@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# PROVIDE: webabuse
+# BEFORE:  LOGIN
+# KEYWORD: 
+
+. /etc/rc.subr
+
+name=webabuse
+rcvar=`set_rcvar`
+command=/tools/web_server_abuse_detection.pl
+command_interpreter=/usr/bin/perl
+webabuse_user=root
+start_cmd="/usr/sbin/daemon -u $webabuse_user $command"
+
+load_rc_config $name
+run_rc_command "$1"
