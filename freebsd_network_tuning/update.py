@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-import urllib2
+from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-page = urllib2.urlopen('https://calomel.org/freebsd_network_tuning.html')
+page = urlopen('https://calomel.org/freebsd_network_tuning.html')
 #  f = open('html.txt')
 #  page = f.read()
 
